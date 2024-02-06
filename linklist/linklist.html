@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Drag and Drop Train Carriages</title>
+    <style>
+       #toolbar {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #eee;
+}
+
+.carriage {
+  display: inline-block; /* แสดงโบกี้ในแนวนอน */
+  margin: 5px;
+  padding: 10px;
+ /* border: 1px solid #ddd; */
+ /* background-color: #f0f0f0; */
+  cursor: move;
+}
+
+#train {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #000;
+  min-height: 100px;
+  white-space: nowrap; /* ให้โบกี้ไม่ขึ้นบรรทัดใหม่ */
+  overflow-x: auto; /* เพิ่ม scrollbar แนวนอนถ้าจำเป็น */
+}
+
+button {
+  padding: 10px 10px;
+  font-size: large;
+}
+
+#train img {
+  width: 80px;
+  height: 80px;
+}
+
+    </style>
+</head>
+<body>
+
+<div id="toolbar">
+    <button onclick="addCarriage()">ADD BOWKY LION</button>
+   
+</div>
+<div id="train">
+    <!-- โบกี้รถไฟจะถูกเพิ่มที่นี่ -->
+    <img src="train.png" alt="">
+</div>
+
+<script src="dragdrop.js"></script>
+</body>
+</html>
